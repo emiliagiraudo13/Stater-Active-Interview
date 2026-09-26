@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stater Active Interview</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f5f3;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .pin {
+      display: block;
+      padding: 80px 20px;
+      border-radius: 16px;
+      background: #d9c5b2;
+      color: #222;
+      text-align: center;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .pin:hover {
+      background: #c9ac91;
+    }
+
+    .writing {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Stater Active Interview</h1>
+    <p>Click a pin to read its writing section.</p>
+  </header>
+
+  <main>
+    <div class="board">
+      <a class="pin" href="#section-one">First idea</a>
+      <a class="pin" href="#section-two">Second idea</a>
+      <a class="pin" href="#section-three">Third idea</a>
+    </div>
+
+    <section class="writing" id="section-one">
+      <h2>First idea</h2>
+      <p>Write your first required section here.</p>
+    </section>
+
+    <section class="writing" id="section-two">
+      <h2>Second idea</h2>
+      <p>Write your second required section here.</p>
+    </section>
+
+    <section class="writing" id="section-three">
+      <h2>Third idea</h2>
+      <p>Write your third required section here.</p>
+    </section>
+  </main>
+</body>
+</html>
