@@ -73,6 +73,39 @@ max-width: 850px;
     grid-template-columns: 1fr;
   }
 }
+    #argentina > img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 20px auto 24px;
+}
+
+#argentina .argentina-photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#argentina .argentina-photos img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+#argentina .argentina-photos img:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  #argentina .argentina-photos {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 
@@ -125,6 +158,13 @@ max-width: 850px;
     <section class="memory" id="argentina">
   <h2>Argentina, Where It Began</h2>
   <img src="IMG_8806.JPG" alt="Me taking a picture in Argentina">
+      <div class="argentina-photos">
+  <img src="IMG_2443.jpg" alt="My family in Argentina">
+  <img src="fiat.jpg" alt="Our blue car">
+  <img src="churhc.jpg" alt="A chapel in Argentina">
+  <img src="DSC01250.JPEG" alt="Me as a child holding a tool">
+  <img src="renata.jpg" alt="Renata and me outdoors">
+</div>
   <p>
     Argentina is where so much of who I am began. My mom’s big family taught me
     what it feels like to be part of a community, and that’s a feeling I try to
