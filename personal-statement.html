@@ -29,18 +29,26 @@
     }
 
     .photos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 12px;
-      margin: 25px 0;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
 
-    .photos img {
-      width: 100%;
-      height: 260px;
-      object-fit: contain;
-      border-radius: 12px;
-    }
+.photos img {
+  width: calc((100% - 24px) / 3);
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .photos img {
+    width: calc((100% - 12px) / 2);
+    height: 200px;
+  }
+}
 
     p { line-height: 1.7; }
   </style>
